@@ -123,7 +123,7 @@ jobs:
           fi
 
       - name: Upload Semgrep SARIF
-        uses: github/codeql-action/upload-sarif@411bbbe57033eedfc1a82d68c01345aa96c737d7
+        uses: github/codeql-action/upload-sarif@b2b7b36cdbec1b41cb56540a8ae11ff9ab0a9f75
         with:
           sarif_file: semgrep.sarif
           category: semgrep
@@ -194,7 +194,7 @@ jobs:
           publish_results: false
 
       - name: Upload Scorecard SARIF
-        uses: github/codeql-action/upload-sarif@411bbbe57033eedfc1a82d68c01345aa96c737d7
+        uses: github/codeql-action/upload-sarif@b2b7b36cdbec1b41cb56540a8ae11ff9ab0a9f75
         with:
           sarif_file: scorecard.sarif
           category: openssf-scorecard
